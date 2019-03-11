@@ -1,0 +1,13 @@
+[Unit]
+Description=Connect to all hosts and get their wifi data
+
+[Service]
+User=promsshwifi
+Group=promsshwifi
+EnvironmentFile=/etc/prometheus-sshwifi/environment
+PrivateTmp=yes
+StateDirectory=prometheus-sshwifi
+ConfigurationDirectory=prometheus-sshwifi
+RuntimeDirectory=prometheus-sshwifi
+WorkingDirectory=/var/lib/prometheus-sshwifi
+ExecStart=/usr/bin/prometeus-sshwifi/scan_and_process.sh

@@ -1,0 +1,9 @@
+[Unit]
+Description=Get wifi details every 5 minutes
+
+[Timer]
+OnStartupSec=60s
+OnUnitInactiveSec=5m
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,6 @@
+Package: prometheus-sshwifi
+Architecture: all
+Maintainer: linus <linus@noomi.com>
+Depends: bash, coreutils, sshpass, awk, prometheus-netscanner
+Description: Connect to all hosts in the network discovered by
+ prometheus-netscanner and get their wifi status
