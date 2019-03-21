@@ -26,7 +26,6 @@ case "$1" in
 
       systemctl daemon-reload
       systemctl enable --now prometheus-sshwifi.timer
-      # systemctl enable --now prometheus-sshwifi-httpd.service
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
