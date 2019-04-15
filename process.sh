@@ -1,8 +1,8 @@
 #!/bin/bash
 
 get_mac() {
-	local ip="$1"
-	grep "$ip" /var/lib/promscan/all | awk '{ print $3 }'
+    local ip="$1"
+    awk '$2 == "'"$ip"'" { print $3 }' /var/lib/promscan/all
 }
 
 for i in "$1"/*; do
